@@ -15,7 +15,7 @@ const CreateEditPost = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [excerpt, setExcerpt] = useState('');
-  const [category, setCategory] = useState('Web Development Tutorials');
+  const [category, setCategory] = useState('Web Development');
   const [coverImage, setCoverImage] = useState('');
   const [uploading, setUploading] = useState(false);
 
@@ -31,7 +31,7 @@ const CreateEditPost = () => {
             setTitle(post.title || '');
             setContent(post.content || '');
             setExcerpt(post.excerpt || '');
-            setCategory(post.category || 'Web Development Tutorials');
+            setCategory(post.category || 'Web Development');
             setCoverImage(post.coverImage || '');
           } else {
             toast.error('Post not found');
@@ -136,9 +136,9 @@ const CreateEditPost = () => {
               onChange={(e) => setCategory(e.target.value)}
               className="mt-1 block w-full bg-slate-700 border border-slate-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm"
             >
-              <option value="Web Development Tutorials">Web Development Tutorials</option>
-              <option value="Solar & Electrical Guides">Solar & Electrical Guides</option>
-              <option value="Tech Business in Nigeria">Tech Business in Nigeria</option>
+              <option value="Web Development Tutorials">Web Development</option>
+              <option value="Solar & Electrical Guides">Solar & Electrical</option>
+              <option value="Tech Business in Nigeria">Tech Business</option>
               <option value="Tech News">Tech News</option>
             </select>
           </div>

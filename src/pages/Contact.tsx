@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center space-x-4 text-slate-300 dark:text-slate-600">
                 <Mail className="h-6 w-6 text-emerald-500" />
-                <span>hello@technaija.com</span>
+                <span>chukwuemekajoshua32@gmail.com</span>
               </div>
               <div className="flex items-center space-x-4 text-slate-300 dark:text-slate-600">
                 <Phone className="h-6 w-6 text-emerald-500" />

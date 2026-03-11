@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard.tsx';
 import { Search } from 'lucide-react';
-import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebase.ts';
+import { useSearchParams } from 'react-router-dom';
 
 const BlogList = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
-  const [category, setCategory] = useState('');
+  const category = searchParams.get('category') || '';
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
@@ -20,18 +22,17 @@ const BlogList = () => {
         return;
       }
       try {
-        let q = query(collection(db, 'posts'), orderBy('createdAt', 'desc'));
-
-        if (category) {
-          q = query(collection(db, 'posts'), where('category', '==', category), orderBy('createdAt', 'desc'));
-        }
-
+        const q = query(collection(db, 'posts'), orderBy('createdAt', 'desc'));
         const querySnapshot = await getDocs(q);
         let postsData = querySnapshot.docs.map(doc => ({
           _id: doc.id,
           ...doc.data(),
           createdAt: doc.data().createdAt?.toDate().toISOString() || new Date().toISOString()
         }));
+
+        if (category) {
+          postsData = postsData.filter((post: any) => post.category === category);
+        }
 
         if (search) {
           postsData = postsData.filter((post: any) => 
@@ -41,7 +42,7 @@ const BlogList = () => {
         }
 
         setPosts(postsData as any);
-        setTotalPages(1); // Simplified pagination for Firebase in this demo
+        setTotalPages(1);
       } catch (error) {
         console.error('Error fetching posts:', error);
       } finally {
@@ -49,7 +50,6 @@ const BlogList = () => {
       }
     };
     
-    // Debounce search
     const timeoutId = setTimeout(() => {
       fetchPosts();
     }, 500);
@@ -77,7 +77,13 @@ const BlogList = () => {
 
           <select
             value={category}
-            onChange={(e) => setCategory(e.target.value)}
+            onChange={(e) => {
+              if (e.target.value) {
+                setSearchParams({ category: e.target.value });
+              } else {
+                setSearchParams({});
+              }
+            }}
             className="w-full md:w-1/4 bg-slate-800 dark:bg-slate-100 border border-slate-700 dark:border-slate-200 rounded-lg py-2 px-4 focus:outline-none focus:border-emerald-500 text-white dark:text-slate-900"
           >
             <option value="">All Categories</option>

@@ -79,19 +79,20 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-white dark:text-slate-900">Explore Categories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: 'Web Development', desc: 'Modern tutorials for React, Node.js, and more.', color: 'bg-blue-600' },
-              { title: 'Solar & Electrical', desc: 'Guides on solar installation and electrical engineering.', color: 'bg-yellow-500' },
-              { title: 'Tech Business', desc: 'Insights on running a tech business in Nigeria.', color: 'bg-emerald-600' },
-              { title: 'Tech News', desc: 'Latest updates and trends in the tech world.', color: 'bg-purple-600' },
+              { title: 'Web Development', desc: 'Modern tutorials for React, Node.js, and more.', color: 'bg-blue-600', category: 'Web Development Tutorials' },
+              { title: 'Solar & Electrical', desc: 'Guides on solar installation and electrical engineering.', color: 'bg-yellow-500', category: 'Solar & Electrical Guides' },
+              { title: 'Tech Business', desc: 'Insights on running a tech business in Nigeria.', color: 'bg-emerald-600', category: 'Tech Business in Nigeria' },
+              { title: 'Tech News', desc: 'Latest updates and trends in the tech world.', color: 'bg-purple-600', category: 'Tech News' },
             ].map((cat, idx) => (
-              <motion.div 
-                key={idx}
-                whileHover={{ scale: 1.05 }}
-                className={`${cat.color} p-8 rounded-2xl shadow-lg text-center cursor-pointer`}
-              >
-                <h3 className="text-2xl font-bold mb-2">{cat.title}</h3>
-                <p className="text-white/80">{cat.desc}</p>
-              </motion.div>
+              <Link key={idx} to={`/blog?category=${encodeURIComponent(cat.category)}`}>
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  className={`${cat.color} p-8 rounded-2xl shadow-lg text-center cursor-pointer h-full`}
+                >
+                  <h3 className="text-2xl font-bold mb-2">{cat.title}</h3>
+                  <p className="text-white/80">{cat.desc}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
