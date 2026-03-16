@@ -25,7 +25,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img 
-              src="/src/public/profile.jpg" 
+              src="/profile.jpg" 
               alt="Profile" 
               className="rounded-2xl shadow-2xl w-full object-cover aspect-[3/4]"
               referrerPolicy="no-referrer"
