@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { format } from 'date-fns';
-import { Calendar, User, Tag, ArrowLeft } from 'lucide-react';
+import { Calendar, User, Tag, ArrowLeft, Share2, Copy, Check } from 'lucide-react';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase.ts';
 import Comments from '../components/Comments.tsx';
+import ReactionBar from '../components/ReactionBar.tsx';
+import ShareButton from '../components/ShareButton.tsx';
 
 const SingleBlog = () => {
   const { slug } = useParams();
@@ -81,6 +83,11 @@ const SingleBlog = () => {
         <div className="prose prose-invert prose-lg dark:prose-invert:dark max-w-none mb-16 text-slate-300 dark:text-slate-700">
           {/* In a real app, use a Markdown renderer here */}
           <div dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }} />
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-6 border-y border-slate-800 dark:border-slate-200 mb-12">
+          <ReactionBar postId={post._id} />
+          <ShareButton title={post.title} />
         </div>
 
         <Comments postId={post._id} />
