@@ -4,6 +4,7 @@ import PostCard from '../components/PostCard.tsx';
 import { motion } from 'framer-motion';
 import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
 import { db } from '../firebase.ts';
+import { Facebook, Twitter, Linkedin, Instagram, Youtube, MessageCircle } from 'lucide-react';
 
 const Home = () => {
   const [featuredPosts, setFeaturedPosts] = useState([]);
@@ -69,6 +70,32 @@ const Home = () => {
             <Link to="/contact" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 text-white dark:text-slate-900 font-bold py-3 px-8 rounded-full transition-colors border border-slate-600 dark:border-slate-300">
               Contact Me
             </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-8"
+          >
+            <p className="text-slate-400 dark:text-slate-500 mb-4">Follow Me</p>
+            <div className="flex justify-center space-x-4">
+              <a href="https://www.facebook.com/chukwuemeka.ezugwu.1" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
+                <Facebook className="h-5 w-5 text-white dark:text-slate-900" />
+              </a>
+              <a href="https://x.com/JoshuaEzugwu1" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
+                <Twitter className="h-5 w-5 text-white dark:text-slate-900" />
+              </a>
+              <a href="https://www.linkedin.com/in/joshua-ezugwu-b-eng-167909241/" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
+                <Linkedin className="h-5 w-5 text-white dark:text-slate-900" />
+              </a>
+              <a href="https://www.instagram.com/joshchukstech?igsh=djV0MWFocGlyeGhh" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
+                <Instagram className="h-5 w-5 text-white dark:text-slate-900" />
+              </a>
+              <a href="https://wa.me/2349151995031" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 p-3 rounded-full transition-colors">
+                <MessageCircle className="h-5 w-5 text-white" />
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>

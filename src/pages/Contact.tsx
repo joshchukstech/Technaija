@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 
 const Contact = () => {
@@ -36,6 +36,10 @@ const Contact = () => {
               <div className="flex items-center space-x-4 text-slate-300 dark:text-slate-600">
                 <Phone className="h-6 w-6 text-emerald-500" />
                 <span>+234 915 199 5031</span>
+              </div>
+              <div className="flex items-center space-x-4 text-slate-300 dark:text-slate-600">
+                <MessageCircle className="h-6 w-6 text-green-500" />
+                <a href="https://wa.me/2349151995031" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 dark:hover:text-emerald-600">WhatsApp: +234 915 199 5031</a>
               </div>
               <div className="flex items-center space-x-4 text-slate-300 dark:text-slate-600">
                 <MapPin className="h-6 w-6 text-emerald-500" />
