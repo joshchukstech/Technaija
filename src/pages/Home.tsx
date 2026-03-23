@@ -86,7 +86,7 @@ const Home = () => {
               <a href="https://x.com/JoshuaEzugwu1" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
                 <Twitter className="h-5 w-5 text-white dark:text-slate-900" />
               </a>
-              <a href="https://www.linkedin.com/in/joshua-ezugwu-b-eng-167909241/" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
+              <a href="https://www.linkedin.com/in/joshua-ezugwu-gmnse-167909241/" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">
                 <Linkedin className="h-5 w-5 text-white dark:text-slate-900" />
               </a>
               <a href="https://www.instagram.com/joshchukstech?igsh=djV0MWFocGlyeGhh" target="_blank" rel="noopener noreferrer" className="bg-slate-700 dark:bg-slate-200 hover:bg-slate-600 dark:hover:bg-slate-300 p-3 rounded-full transition-colors">

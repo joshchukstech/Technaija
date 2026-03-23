@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/chukwuemeka.ezugwu.1" className="hover:text-emerald-400 dark:hover:text-emerald-600"><Facebook className="h-5 w-5" /></a>
               <a href="https://x.com/JoshuaEzugwu1" className="hover:text-emerald-400 dark:hover:text-emerald-600"><Twitter className="h-5 w-5" /></a>
-              <a href="https://www.linkedin.com/in/joshua-ezugwu-b-eng-167909241/" className="hover:text-emerald-400 dark:hover:text-emerald-600"><Linkedin className="h-5 w-5" /></a>
+              <a href="https://www.linkedin.com/in/joshua-ezugwu-gmnse-167909241/" className="hover:text-emerald-400 dark:hover:text-emerald-600"><Linkedin className="h-5 w-5" /></a>
               <a href="https://www.instagram.com/joshchukstech?igsh=djV0MWFocGlyeGhh" className="hover:text-emerald-400 dark:hover:text-emerald-600"><Instagram className="h-5 w-5" /></a>
             </div>
           </div>
