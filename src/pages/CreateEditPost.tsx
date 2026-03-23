@@ -136,10 +136,10 @@ const CreateEditPost = () => {
               onChange={(e) => setCategory(e.target.value)}
               className="mt-1 block w-full bg-slate-700 border border-slate-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm"
             >
-              <option value="Web Development Tutorials">Web Development</option>
-              <option value="Solar & Electrical Guides">Solar & Electrical</option>
-              <option value="Tech Business in Nigeria">Tech Business</option>
-              <option value="Tech News">Tech News</option>
+              <option value="Web Development Tutorials">Tech Updates</option>
+              <option value="Solar & Electrical Guides">Solar Energy</option>
+              {/* <option value="Tech Business in Nigeria">Tech Business</option>
+              <option value="Tech News">Tech News</option> */}
             </select>
           </div>
 

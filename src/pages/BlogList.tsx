@@ -87,10 +87,10 @@ const BlogList = () => {
             className="w-full md:w-1/4 bg-slate-800 dark:bg-slate-100 border border-slate-700 dark:border-slate-200 rounded-lg py-2 px-4 focus:outline-none focus:border-emerald-500 text-white dark:text-slate-900"
           >
             <option value="">All Categories</option>
-            <option value="Web Development Tutorials">Web Development</option>
-            <option value="Solar & Electrical Guides">Solar & Electrical</option>
-            <option value="Tech Business in Nigeria">Tech Business</option>
-            <option value="Tech News">Tech News</option>
+            <option value="Web Development Tutorials">Tech Updates</option>
+            <option value="Solar & Electrical Guides">Solar Energy</option>
+            {/* <option value="Tech Business in Nigeria">Tech Business</option>
+            <option value="Tech News">Tech News</option> */}
           </select>
         </div>
 

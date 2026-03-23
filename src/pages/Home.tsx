@@ -55,7 +55,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-300 dark:text-slate-600 max-w-3xl mx-auto mb-8"
           >
-            Your go-to resource for web development tutorials, solar energy guides, and navigating the tech business landscape in Nigeria.
+            Your go-to resource for tech updates and solar energy  business landscape in Nigeria.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -77,12 +77,13 @@ const Home = () => {
       <section className="py-16 bg-slate-900 dark:bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12 text-white dark:text-slate-900">Explore Categories</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: 'Web Development', desc: 'Modern tutorials for React, Node.js, and more.', color: 'bg-blue-600', category: 'Web Development Tutorials' },
-              { title: 'Solar & Electrical', desc: 'Guides on solar installation and electrical engineering.', color: 'bg-yellow-500', category: 'Solar & Electrical Guides' },
-              { title: 'Tech Business', desc: 'Insights on running a tech business in Nigeria.', color: 'bg-emerald-600', category: 'Tech Business in Nigeria' },
-              { title: 'Tech News', desc: 'Latest updates and trends in the tech world.', color: 'bg-purple-600', category: 'Tech News' },
+              { title: 'Tech Updates', desc: 'Latest updates on tech advancements and more.', color: 'bg-blue-600', category: 'Web Development Tutorials' },
+              { title: 'Solar Energy', desc: 'Guides on solar installation and electrical engineering.', color: 'bg-yellow-500', category: 'Solar & Electrical Guides' },
+              // { title: 'Tech Business', desc: 'Insights on running a tech business in Nigeria.', color: 'bg-emerald-600', category: 'Tech Business in Nigeria' },
+              // { title: 'Tech News', desc: 'Latest updates and trends in the tech world.', color: 'bg-purple-600', category: 'Tech News' },
             ].map((cat, idx) => (
               <Link key={idx} to={`/blog?category=${encodeURIComponent(cat.category)}`}>
                 <motion.div 
@@ -94,6 +95,7 @@ const Home = () => {
                 </motion.div>
               </Link>
             ))}
+            </div>
           </div>
         </div>
       </section>
