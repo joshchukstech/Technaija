@@ -15,6 +15,8 @@ import AdminDashboard from './pages/AdminDashboard.tsx';
 import CreateEditPost from './pages/CreateEditPost.tsx';
 import About from './pages/About.tsx';
 import Contact from './pages/Contact.tsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
+import TermsOfService from './pages/TermsOfService.tsx';
 
 function App() {
   return (
@@ -24,14 +26,17 @@ function App() {
           <Navbar />
           <main className="flex-grow">
             <Routes>
+              {/* PUBLIC ROUTES - No authentication required */}
               <Route path="/" element={<Home />} />
               <Route path="/blog" element={<BlogList />} />
-              <Route path="/blog/:slug" element={<SingleBlog />} />
+              <Route path="/post/:slug" element={<SingleBlog />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/login" element={<Login />} />
 
-              {/* Protected Admin Routes */}
+              {/* PROTECTED ADMIN ROUTES - Authentication required */}
               <Route element={<ProtectedRoute />}>
                 <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/admin/create" element={<CreateEditPost />} />

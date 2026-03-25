@@ -28,8 +28,9 @@ const Navbar = () => {
               <Link to="/blog" className="hover:text-emerald-400 dark:hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
               <Link to="/about" className="hover:text-emerald-400 dark:hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium">About</Link>
               <Link to="/contact" className="hover:text-emerald-400 dark:hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+              <Link to="/privacy-policy" className="hover:text-emerald-400 dark:hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium">Privacy</Link>
               {user && user.role === 'admin' && (
-                <Link to="/admin" className="hover:text-emerald-400 dark:hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium">Dashboard</Link>
+                <Link to="/admin" className="bg-emerald-600 hover:bg-emerald-700 px-3 py-2 rounded-md text-sm font-medium">Dashboard</Link>
               )}
             </div>
           </div>
@@ -73,8 +74,9 @@ const Navbar = () => {
             <Link to="/blog" className="hover:text-emerald-400 dark:hover:text-emerald-600 block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
             <Link to="/about" className="hover:text-emerald-400 dark:hover:text-emerald-600 block px-3 py-2 rounded-md text-base font-medium">About</Link>
             <Link to="/contact" className="hover:text-emerald-400 dark:hover:text-emerald-600 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
+            <Link to="/privacy-policy" className="hover:text-emerald-400 dark:hover:text-emerald-600 block px-3 py-2 rounded-md text-base font-medium">Privacy Policy</Link>
             {user && user.role === 'admin' && (
-              <Link to="/admin" className="hover:text-emerald-400 dark:hover:text-emerald-600 block px-3 py-2 rounded-md text-base font-medium">Dashboard</Link>
+              <Link to="/admin" className="bg-emerald-600 hover:bg-emerald-700 block px-3 py-2 rounded-md text-base font-medium text-center">Dashboard</Link>
             )}
             <button
               onClick={toggleTheme}
