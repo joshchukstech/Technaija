@@ -95,7 +95,7 @@ const Home = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden lg:block"
+              className=""
             >
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-yellow-500 rounded-2xl blur-xl opacity-20"></div>
