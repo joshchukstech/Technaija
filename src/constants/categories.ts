@@ -1,6 +1,7 @@
 export const CATEGORIES = {
-  TECH_UPDATES: 'Tech Updates',
-  RENEWABLE_ENERGY: 'Renewable Energy',
+  TECH_NEWS: 'Tech Updates',
+  OPPORTUNITIES: 'Tech Jobs',
+  AI_TOOLS: 'AI & Tools',
 } as const;
 
 export type Category = typeof CATEGORIES[keyof typeof CATEGORIES];
@@ -13,10 +14,12 @@ export const isValidCategory = (category: string): boolean => {
 
 export const getCategoryColor = (category: string): string => {
   switch (category) {
-    case CATEGORIES.TECH_UPDATES:
+    case CATEGORIES.TECH_NEWS:
       return 'from-blue-600 to-cyan-500';
-    case CATEGORIES.RENEWABLE_ENERGY:
-      return 'from-yellow-500 to-orange-500';
+    case CATEGORIES.OPPORTUNITIES:
+      return 'from-green-600 to-emerald-500';
+    case CATEGORIES.AI_TOOLS:
+      return 'from-purple-600 to-pink-500';
     default:
       return 'from-slate-600 to-slate-500';
   }
@@ -24,10 +27,12 @@ export const getCategoryColor = (category: string): string => {
 
 export const getCategoryIcon = (category: string): string => {
   switch (category) {
-    case CATEGORIES.TECH_UPDATES:
-      return '💻';
-    case CATEGORIES.RENEWABLE_ENERGY:
-      return '⚡';
+    case CATEGORIES.TECH_NEWS:
+      return '📰';
+    case CATEGORIES.OPPORTUNITIES:
+      return '💼';
+    case CATEGORIES.AI_TOOLS:
+      return '🤖';
     default:
       return '📝';
   }

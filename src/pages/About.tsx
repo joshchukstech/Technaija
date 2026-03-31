@@ -19,7 +19,7 @@ const About = () => {
               About <span className="text-emerald-400 dark:text-emerald-600">TechNaija</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 dark:text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Bridging the gap between technology, energy, and entrepreneurship in Nigeria through quality content and practical guides.
+              Bridging the gap in Nigeria's tech ecosystem through quality content covering tech news, AI tools, and opportunities for aspiring tech professionals.
             </p>
           </motion.div>
         </div>
@@ -61,13 +61,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-slate-300 dark:text-slate-700 leading-relaxed">
                 <p>
-                  I'm a Nigerian tech entrepreneur, electrical engineer, and certified Solar PV Design Engineer with over a decade of experience in software development and renewable energy systems.
+                  I'm a Nigerian tech entrepreneur and full-stack developer with over a decade of experience in software development, AI integration, and tech community building.
                 </p>
                 <p>
-                  My passion lies in solving real-world problems through technology and sustainable energy solutions. I help businesses and individuals leverage modern tech stacks and solar power for growth and efficiency.
+                  My passion lies in helping others break into tech and stay ahead of the curve. I focus on making complex tech topics accessible and highlighting opportunities in Nigeria's growing tech ecosystem.
                 </p>
                 <p>
-                  Through TechNaija Blog, I share my knowledge and experience to empower the next generation of Nigerian tech leaders and promote renewable energy adoption across Africa.
+                  Through Tech9ja, I share the latest tech news, AI tools, and opportunities to empower the next generation of Nigerian tech professionals.
                 </p>
               </div>
               
@@ -82,11 +82,11 @@ const About = () => {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-emerald-400 dark:text-emerald-600 mr-3" />
-                  <span className="text-sm font-medium text-slate-300 dark:text-slate-700">MERN Stack Expert</span>
+                  <span className="text-sm font-medium text-slate-300 dark:text-slate-700">Full-Stack Developer</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-emerald-400 dark:text-emerald-600 mr-3" />
-                  <span className="text-sm font-medium text-slate-300 dark:text-slate-700">Solar PV Designer</span>
+                  <span className="text-sm font-medium text-slate-300 dark:text-slate-700">Tech Community Lead</span>
                 </div>
               </div>
 
@@ -143,20 +143,20 @@ const About = () => {
               {[
                 { 
                   icon: Code, 
-                  title: 'Web Development', 
-                  desc: 'Building scalable, modern web applications using the MERN stack (MongoDB, Express, React, Node.js). From landing pages to complex enterprise solutions.',
+                  title: 'Tech News', 
+                  desc: 'Stay updated with the latest developments in technology, from AI breakthroughs to new tools and platforms reshaping the industry.',
                   color: 'from-blue-600 to-cyan-500'
                 },
                 { 
-                  icon: Zap, 
-                  title: 'Solar Energy', 
-                  desc: 'Designing and installing efficient solar power systems for homes, offices, and industrial applications. Certified in Solar PV system design.',
-                  color: 'from-yellow-500 to-orange-500'
+                  icon: Briefcase, 
+                  title: 'Opportunities', 
+                  desc: 'Discover tech jobs, internships, and scholarships in Nigeria. Helping you take the first step in your tech career.',
+                  color: 'from-green-600 to-emerald-500'
                 },
                 { 
-                  icon: Briefcase, 
-                  title: 'Tech Consulting', 
-                  desc: 'Strategic consulting on digital transformation, tech startup guidance, and business process optimization using modern technologies.',
+                  icon: Zap, 
+                  title: 'AI & Tools', 
+                  desc: 'Explore cutting-edge AI tools and technologies. Learn how to leverage AI for productivity and innovation.',
                   color: 'from-purple-600 to-pink-500'
                 },
               ].map((skill, idx) => (
@@ -189,7 +189,7 @@ const About = () => {
           >
             <h2 className="text-2xl md:text-3xl font-bold text-white dark:text-slate-900 mb-6">My Mission</h2>
             <p className="text-lg md:text-xl text-slate-300 dark:text-slate-700 max-w-3xl mx-auto leading-relaxed">
-              To empower the next generation of Nigerian tech leaders and promote sustainable energy solutions through quality education, practical tutorials, and community engagement.
+              To empower the next generation of Nigerian tech professionals through quality content, practical insights, and by highlighting opportunities in AI, tech news, and career development.
             </p>
             <div className="mt-8">
               <Link 

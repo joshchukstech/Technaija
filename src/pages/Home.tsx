@@ -51,13 +51,13 @@ const Home = () => {
               transition={{ duration: 0.8 }}
             >
               <span className="inline-block bg-emerald-500/20 text-emerald-400 dark:text-emerald-600 px-4 py-1 rounded-full text-sm font-medium mb-6">
-                Welcome to TechNaija
+                Welcome to Tech9ja
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Empowering <span className="text-emerald-400 dark:text-emerald-600">Nigerian Tech</span> & <span className="text-yellow-400 dark:text-yellow-500">Solar</span>
+                Your Source for <span className="text-emerald-400 dark:text-emerald-600">Tech Jobs</span>, <span className="text-blue-400 dark:text-blue-600">Tech Updates</span> & <span className="text-purple-400 dark:text-purple-600">AI Tools</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-300 dark:text-slate-600 mb-8 leading-relaxed">
-                Your go-to resource for tech updates, programming tutorials, solar energy guides, and business insights in Nigeria.
+                Stay ahead with the latest tech news, discover powerful AI tools, and find tech jobs in Nigeria's growing tech ecosystem.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/blog" className="inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50">
@@ -131,12 +131,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white dark:text-slate-900 mb-4">Explore Topics</h2>
-            <p className="text-slate-400 dark:text-slate-600 max-w-2xl mx-auto">Discover content across different areas of technology and renewable energy</p>
+            <p className="text-slate-400 dark:text-slate-600 max-w-2xl mx-auto">Discover content across AI tools, tech news, and opportunities</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { title: 'Tech Updates', desc: 'Web development, programming tutorials, and tech industry news', category: CATEGORIES.TECH_UPDATES },
-              { title: 'Renewable Energy', desc: 'Solar installation guides and electrical engineering tips', category: CATEGORIES.RENEWABLE_ENERGY },
+              { title: 'Tech Updates', desc: 'Stay updated with the latest in tech', category: CATEGORIES.TECH_NEWS },
+              { title: 'Tech Jobs', desc: 'Jobs, internships & scholarships', category: CATEGORIES.OPPORTUNITIES },
+              { title: 'AI & Tools', desc: 'Discover the latest AI tools & trends', category: CATEGORIES.AI_TOOLS },
             ].map((cat, idx) => (
               <Link key={idx} to={`/blog?category=${encodeURIComponent(cat.category)}`}>
                 <motion.div 
@@ -257,7 +258,7 @@ const Home = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white dark:text-slate-900 mb-4">Stay Updated</h2>
             <p className="text-slate-300 dark:text-slate-600 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter and get the latest tech tutorials, solar guides, and business insights delivered to your inbox.
+              Subscribe to our newsletter and get the latest tech news, AI tools, and opportunities delivered to your inbox.
             </p>
             <Link 
               to="/contact" 

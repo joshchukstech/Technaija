@@ -6,12 +6,12 @@ import { CATEGORIES } from '../constants/categories.ts';
 const Footer = () => {
   return (
     <footer className="bg-slate-900 dark:bg-slate-100 border-t border-slate-800 dark:border-slate-200 text-slate-400 dark:text-slate-600 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx- auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <h3 className="text-emerald-400 dark:text-emerald-600 text-xl font-bold mb-4">TechNaija</h3>
+            <h3 className="text-emerald-400 dark:text-emerald-600 text-xl font-bold mb-4">Tech9ja</h3>
             <p className="text-sm leading-relaxed">
-              Empowering Nigerian tech entrepreneurs and engineers with tutorials, guides, and business insights.
+              Your go-to source for tech news, AI tools, and opportunities in Nigeria's growing tech ecosystem.
             </p>
           </div>
           <div>
@@ -26,8 +26,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white dark:text-slate-900 text-lg font-bold mb-4">Categories</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to={`/blog?category=${encodeURIComponent(CATEGORIES.TECH_UPDATES)}`} className="hover:text-emerald-400 dark:hover:text-emerald-600 transition-colors">{CATEGORIES.TECH_UPDATES}</Link></li>
-              <li><Link to={`/blog?category=${encodeURIComponent(CATEGORIES.RENEWABLE_ENERGY)}`} className="hover:text-emerald-400 dark:hover:text-emerald-600 transition-colors">{CATEGORIES.RENEWABLE_ENERGY}</Link></li>
+              <li><Link to={`/blog?category=${encodeURIComponent(CATEGORIES.TECH_NEWS)}`} className="hover:text-emerald-400 dark:hover:text-emerald-600 transition-colors">{CATEGORIES.TECH_NEWS}</Link></li>
+              <li><Link to={`/blog?category=${encodeURIComponent(CATEGORIES.OPPORTUNITIES)}`} className="hover:text-emerald-400 dark:hover:text-emerald-600 transition-colors">Tech Jobs</Link></li>
+              <li><Link to={`/blog?category=${encodeURIComponent(CATEGORIES.AI_TOOLS)}`} className="hover:text-emerald-400 dark:hover:text-emerald-600 transition-colors">{CATEGORIES.AI_TOOLS}</Link></li>
             </ul>
           </div>
           <div>
@@ -46,8 +47,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-slate-800 dark:border-slate-200 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} TechNaija Blog. All rights reserved.</p>
-          <p className="mt-2 text-xs">Made with passion in Nigeria</p>
+          <p>&copy; {new Date().getFullYear()} Tech9ja Blog. All rights reserved.</p>
+          <p className="mt-2 text-xs">Joshchuks Tech Solutions</p>
         </div>
       </div>
     </footer>

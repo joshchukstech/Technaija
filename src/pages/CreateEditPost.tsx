@@ -16,7 +16,7 @@ const CreateEditPost = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [excerpt, setExcerpt] = useState('');
-  const [category, setCategory] = useState(CATEGORIES.TECH_UPDATES);
+  const [category, setCategory] = useState(CATEGORIES.TECH_NEWS);
   const [coverImage, setCoverImage] = useState('');
   const [uploading, setUploading] = useState(false);
   const editorRef = useRef<HTMLDivElement>(null);
@@ -33,8 +33,8 @@ const CreateEditPost = () => {
             setTitle(post.title || '');
             setContent(post.content || '');
             setExcerpt(post.excerpt || '');
-            const postCategory = post.category || CATEGORIES.TECH_UPDATES;
-            setCategory(isValidCategory(postCategory) ? postCategory : CATEGORIES.TECH_UPDATES);
+            const postCategory = post.category || CATEGORIES.TECH_NEWS;
+            setCategory(isValidCategory(postCategory) ? postCategory : CATEGORIES.TECH_NEWS);
             setCoverImage(post.coverImage || '');
             if (editorRef.current && post.content) {
               editorRef.current.innerHTML = post.content;
@@ -199,8 +199,9 @@ const CreateEditPost = () => {
               onChange={(e) => setCategory(e.target.value)}
               className="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
             >
-              <option value={CATEGORIES.TECH_UPDATES}>{CATEGORIES.TECH_UPDATES}</option>
-              <option value={CATEGORIES.RENEWABLE_ENERGY}>{CATEGORIES.RENEWABLE_ENERGY}</option>
+              <option value={CATEGORIES.TECH_NEWS}>Tech Updates</option>
+              <option value={CATEGORIES.OPPORTUNITIES}>Tech Jobs</option>
+              <option value={CATEGORIES.AI_TOOLS}>{CATEGORIES.AI_TOOLS}</option>
             </select>
           </div>
 

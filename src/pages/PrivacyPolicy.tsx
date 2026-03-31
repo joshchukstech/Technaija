@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">Introduction</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              At TechNaija Blog, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. Please read this privacy policy carefully. By using our site, you consent to the practices described in this policy.
+              At Tech9ja, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. Please read this privacy policy carefully. By using our site, you consent to the practices described in this policy.
             </p>
           </section>
 

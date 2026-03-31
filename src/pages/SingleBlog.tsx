@@ -42,6 +42,54 @@ const SingleBlog = () => {
     fetchPost();
   }, [slug]);
 
+  useEffect(() => {
+    if (post) {
+      document.title = `${post.title} | Tech9ja`;
+      let metaDescription = document.querySelector('meta[name="description"]');
+      if (!metaDescription) {
+        metaDescription = document.createElement('meta');
+        metaDescription.setAttribute('name', 'description');
+        document.head.appendChild(metaDescription);
+      }
+      metaDescription.setAttribute('content', post.excerpt || `${post.title} - Read more on Tech9ja`);
+      
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (!ogTitle) {
+        ogTitle = document.createElement('meta');
+        ogTitle.setAttribute('property', 'og:title');
+        document.head.appendChild(ogTitle);
+      }
+      ogTitle.setAttribute('content', `${post.title} | Tech9ja`);
+      
+      let ogDesc = document.querySelector('meta[property="og:description"]');
+      if (!ogDesc) {
+        ogDesc = document.createElement('meta');
+        ogDesc.setAttribute('property', 'og:description');
+        document.head.appendChild(ogDesc);
+      }
+      ogDesc.setAttribute('content', post.excerpt || `${post.title} - Read more on Tech9ja`);
+      
+      let twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (!twitterTitle) {
+        twitterTitle = document.createElement('meta');
+        twitterTitle.setAttribute('name', 'twitter:title');
+        document.head.appendChild(twitterTitle);
+      }
+      twitterTitle.setAttribute('content', `${post.title} | Tech9ja`);
+      
+      let twitterDesc = document.querySelector('meta[name="twitter:description"]');
+      if (!twitterDesc) {
+        twitterDesc = document.createElement('meta');
+        twitterDesc.setAttribute('name', 'twitter:description');
+        document.head.appendChild(twitterDesc);
+      }
+      twitterDesc.setAttribute('content', post.excerpt || `${post.title} - Read more on Tech9ja`);
+    }
+    return () => {
+      document.title = 'Tech9ja | Tech News, AI Tools & Opportunities in Nigeria';
+    };
+  }, [post]);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex justify-center items-center">

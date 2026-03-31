@@ -17,14 +17,14 @@ const TermsOfService = () => {
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">1. Agreement to Terms</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              By accessing and using TechNaija Blog, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this website.
+              By accessing and using Tech9ja, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this website.
             </p>
           </section>
 
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">2. Use License</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed mb-4">
-              Permission is granted to temporarily access the materials on TechNaija Blog for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license, you may not:
+              Permission is granted to temporarily access the materials on Tech9ja for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license, you may not:
             </p>
             <ul className="list-disc list-inside text-slate-300 dark:text-slate-700 space-y-2 ml-4">
               <li>Modify or copy the materials</li>
@@ -38,38 +38,38 @@ const TermsOfService = () => {
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">3. Disclaimer</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed mb-4">
-              The materials on TechNaija Blog are provided on an 'as is' basis. TechNaija Blog makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+              The materials on Tech9ja are provided on an 'as is' basis. Tech9ja makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
             </p>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              Further, TechNaija Blog does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
+              Further, Tech9ja does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
             </p>
           </section>
 
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">4. Limitations</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              In no event shall TechNaija Blog or its authors be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TechNaija Blog, even if we have been notified of the possibility of such damage.
+              In no event shall Tech9ja or its authors be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Tech9ja, even if we have been notified of the possibility of such damage.
             </p>
           </section>
 
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">5. Accuracy of Materials</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              The materials appearing on TechNaija Blog could include technical, typographical, or photographic errors. TechNaija Blog does not warrant that any of the materials on its website are accurate, complete, or current. TechNaija Blog may make changes to the materials contained on its website at any time without notice.
+              The materials appearing on Tech9ja could include technical, typographical, or photographic errors. Tech9ja does not warrant that any of the materials on its website are accurate, complete, or current. Tech9ja may make changes to the materials contained on its website at any time without notice.
             </p>
           </section>
 
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">6. Links</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              TechNaija Blog has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TechNaija Blog of the site. Use of any such linked website is at the user's own risk.
+              Tech9ja has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Tech9ja of the site. Use of any such linked website is at the user's own risk.
             </p>
           </section>
 
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">7. Modifications</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              TechNaija Blog may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.
+              Tech9ja may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.
             </p>
           </section>
 
@@ -83,7 +83,7 @@ const TermsOfService = () => {
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">9. User Conduct</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed mb-4">
-              By using TechNaija Blog, you agree to:
+              By using Tech9ja, you agree to:
             </p>
             <ul className="list-disc list-inside text-slate-300 dark:text-slate-700 space-y-2 ml-4">
               <li>Not use the website for any unlawful purpose</li>
@@ -98,7 +98,7 @@ const TermsOfService = () => {
           <section className="bg-slate-800 dark:bg-slate-100 p-8 rounded-2xl border border-slate-700 dark:border-slate-200">
             <h2 className="text-2xl font-bold text-emerald-400 dark:text-emerald-600 mb-4">10. Comments and Feedback</h2>
             <p className="text-slate-300 dark:text-slate-700 leading-relaxed">
-              By posting comments or providing feedback on TechNaija Blog, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, and distribute such content in any form.
+              By posting comments or providing feedback on Tech9ja, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, and distribute such content in any form.
             </p>
           </section>
 

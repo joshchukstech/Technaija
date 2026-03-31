@@ -116,7 +116,7 @@ const BlogList = () => {
             <span className="text-emerald-400 dark:text-emerald-600">Blog</span> Posts
           </h1>
           <p className="text-slate-400 dark:text-slate-600 max-w-2xl mx-auto">
-            Explore our collection of tech tutorials, solar energy guides, and business insights
+            Explore our collection of tech news, AI tools, and opportunities in Nigeria's tech ecosystem
           </p>
         </motion.div>
       </div>
@@ -155,8 +155,9 @@ const BlogList = () => {
               className="bg-slate-800 dark:bg-slate-100 border border-slate-700 dark:border-slate-200 rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-white dark:text-slate-900 min-w-[180px]"
             >
               <option value="">All Categories</option>
-              <option value={CATEGORIES.TECH_UPDATES}>{CATEGORIES.TECH_UPDATES}</option>
-              <option value={CATEGORIES.RENEWABLE_ENERGY}>{CATEGORIES.RENEWABLE_ENERGY}</option>
+              <option value={CATEGORIES.TECH_NEWS}>Tech Updates</option>
+              <option value={CATEGORIES.OPPORTUNITIES}>Tech Jobs</option>
+              <option value={CATEGORIES.AI_TOOLS}>{CATEGORIES.AI_TOOLS}</option>
             </select>
           </div>
         </motion.div>

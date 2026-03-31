@@ -1,4 +1,4 @@
-# TechNaija Blog
+# Tech9ja Blog
 
 A full-stack Serverless blog application for a Nigerian tech entrepreneur.
 
@@ -28,7 +28,7 @@ A full-stack Serverless blog application for a Nigerian tech entrepreneur.
 
 4.  **Create Admin User**:
     - Go to your Firebase Console -> Authentication -> Users.
-    - Click "Add User" and create an account (e.g., `admin@technaija.com` / `admin123`).
+    - Click "Add User" and create an account (e.g., `admin@tech9ja.com` / `admin123`).
     - *Optional (for strict role checking)*: Go to Firestore Database, create a `users` collection, add a document with the Document ID matching the user's UID, and add a field `role` with the value `"admin"`. (The app currently defaults to treating logged-in users as admins for demo purposes).
 
 5.  **Build for Production**:
